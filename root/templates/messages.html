@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Login Form</title>
+<!--    <link rel ="stylesheet" href="styles.css">-->
+</head>
+
+<body>
+
+
+MESSAGES
+
+
+
+<form action="{% url 'landing'%}" method="get">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
+
+</body>
+
+
+</html>
