@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="{% url 'home' %}" method="POST">
+
+        {% csrf_token %}
+
+        <input type="text" name="username" id="username">
+
+        <input type="password" name="password" id="password">
+
+        <button type="submit"> Login </button>
+
+    </form>
+
+
+
+</body>
+</html>
